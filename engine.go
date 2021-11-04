@@ -1,4 +1,4 @@
-package botendinetg
+package botenginetg
 
 import tgbotapi "github.com/Syfaro/telegram-bot-api"
 
