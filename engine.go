@@ -27,15 +27,15 @@ type Message struct {
 }
 
 type Verdict struct {
-	Page string
+	Page              string
 	DeleteUserMessage bool
 }
 
-func NewVerdictWithDeletion (page string) Verdict {
+func NewVerdictWithDeletion(page string) Verdict {
 	return Verdict{page, true}
 }
 
-func NewVerdictWithoutDeletion (page string) Verdict {
+func NewVerdictWithoutDeletion(page string) Verdict {
 	return Verdict{page, false}
 }
 

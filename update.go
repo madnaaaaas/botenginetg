@@ -9,15 +9,15 @@ import (
 	tgbotapi "github.com/Syfaro/telegram-bot-api"
 )
 
-const maxPhotoSize = 19*(1 << 20)
+const maxPhotoSize = 19 * (1 << 20)
 
 var (
-	ErrorPhotoNotFound = fmt.Errorf("photo not presented in update")
-	ErrorPhotoOverMaxSize = fmt.Errorf("photo over max size (%d Mb)", maxPhotoSize >> 20)
+	ErrorPhotoNotFound    = fmt.Errorf("photo not presented in update")
+	ErrorPhotoOverMaxSize = fmt.Errorf("photo over max size (%d Mb)", maxPhotoSize>>20)
 )
 
 type Update struct {
-	bot *tgbotapi.BotAPI
+	bot      *tgbotapi.BotAPI
 	tgUpdate *tgbotapi.Update
 }
 
